@@ -1,0 +1,19 @@
+##In the field of historical geography, tracking the shifts in Earth's positions and alignments over time is crucial for understanding long-term climatic, geological, and astronomical phenomena.
+##Your task is to develop a program that identifies specific years within a given range where all geographic positions on Earth have completely shifted after 60 years.
+
+<---code--->
+#include <iostream>
+using namespace std;
+int main()
+{
+    int start,end,year;
+    cin>>start;
+    cin>>end;
+    year = 0;
+    for(int i =  start;i< end; i = i+60)
+    {
+        year = i;
+        cout<<"All positions change in year "<<year<<endl;
+    }
+    return 0;
+}
