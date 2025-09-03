@@ -1,0 +1,26 @@
+//Write a program to calculate the sum of odd and even digits in a number.
+<--------------------code---------------->
+// You are using GCC
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int oddSum=0,evenSum = 0;
+    while(n>0)
+    {
+        int digit = n%10;
+        if(digit%2==0)
+        {
+            evenSum +=digit;
+        }
+        else
+        {
+            oddSum += digit;
+        }
+        n/=10;
+    }
+    cout<<oddSum<<" "<<evenSum<<endl;
+    return 0;
+}
