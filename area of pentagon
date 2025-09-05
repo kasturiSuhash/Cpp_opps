@@ -1,0 +1,25 @@
+/*
+Write a program to print the area of a pentagon given its diagonal. Print -1 if the number is negative
+Formula:
+ $$ \frac{1}{8}  {d^2 (-5+ \sqrt{45})\sqrt{ \sqrt{20} + 5 } } $$ 
+*/
+<--------------code----------------------->
+
+#include <iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    float N;
+    cin>>N;
+    if(N<0)
+    {
+        cout<<-1;
+    }
+    else
+    {
+        float area = ((N*N)*(-5+sqrt(45))*(sqrt(sqrt(20)+5)))/8;
+        printf("%.2f\n",area);
+    }
+    return 0;
+}
